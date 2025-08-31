@@ -1,0 +1,20 @@
+.inf-marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background: #1f1f1f;
+  padding: 10px 0;
+}
+
+.inf-marquee-measure {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  white-space: nowrap;
+  visibility: hidden;
+}
+
+.inf-marquee-track {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}

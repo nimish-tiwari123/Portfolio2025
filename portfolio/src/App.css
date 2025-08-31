@@ -14,3 +14,12 @@ body {
   box-sizing: border-box;
   background-color: #f8f8f8;
 }
+.bg-custom-primary {
+  background-color: var(--primary);
+}
+.custom-primary {
+  color: var(--primary);
+}
+.bg-custom-dark {
+  background-color: var(--dark);
+}
