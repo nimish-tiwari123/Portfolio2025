@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Navbar, Nav, Container, Offcanvas } from "react-bootstrap";
 import { BtnV1 } from "../../components/common";
 import { logoDark as logo } from "../../assets";
+import { menu } from "../../assets/icons";
+import "./style.css";
 
 const PortfolioNavbar = () => {
   const [show, setShow] = useState(false);
@@ -9,12 +11,17 @@ const PortfolioNavbar = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const handleContactClick = () => {
+    window.location.href = "mailto:nimish.tiwari0704@gmail.com";
+    handleClose();
+  };
+
   return (
     <>
       <Navbar expand="lg" className="py-3 border-bottom">
         <Container>
           {/* Logo */}
-          <Navbar.Brand href="#home" className="d-flex align-items-center">
+          <Navbar.Brand href="/" className="d-flex align-items-center">
             <img
               src={logo}
               alt="logo"
@@ -24,21 +31,19 @@ const PortfolioNavbar = () => {
           </Navbar.Brand>
 
           {/* Custom Toggle Button */}
-          <div
-            className="d-lg-none"
-            onClick={show ? handleClose : handleShow}
-            style={{ cursor: "pointer", fontSize: "1.8rem" }}
-          >
-            ☰
+          <div className="d-lg-none" onClick={show ? handleClose : handleShow}>
+            <div className="menu-box rounded-circle shadow-sm d-flex justify-content-center align-items-center bg-white">
+              <img src={menu} alt="Menu" />
+            </div>
           </div>
 
           {/* Normal desktop nav */}
           <div className="d-none d-lg-flex justify-content-center w-100">
             <Nav className="mx-auto">
-              <Nav.Link href="#work" className="fw-medium mx-3">
+              <Nav.Link href="/my-work" className="fw-medium mx-3">
                 My Work
               </Nav.Link>
-              <Nav.Link href="#about" className="fw-medium mx-3">
+              <Nav.Link href="/about-contact" className="fw-medium mx-3">
                 About & Contact
               </Nav.Link>
             </Nav>
@@ -47,12 +52,14 @@ const PortfolioNavbar = () => {
             <div className="d-flex align-items-center">
               <div className="pe-3">
                 <span className="text-muted opacity-75">Email : </span>
-                nimish.tiwari0704@gmail.com
+                <a
+                  href="mailto:nimish.tiwari0704@gmail.com"
+                  className="text-decoration-none text-dark"
+                >
+                  nimish.tiwari0704@gmail.com
+                </a>
               </div>
-              <BtnV1
-                label="Contact Me"
-                onClick={() => alert("Contact Me Clicked")}
-              />
+              <BtnV1 label="Contact Me" onClick={handleContactClick} />
             </div>
           </div>
         </Container>
@@ -67,20 +74,22 @@ const PortfolioNavbar = () => {
       >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
-            <img src={logo} alt="logo" width="100" />
+               <Navbar.Brand href="/" className="d-flex align-items-center">
+          <img src={logo} alt="logo" width="100" />
+          </Navbar.Brand>
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="flex-column text-center">
             <Nav.Link
-              href="#work"
+              href="/my-work"
               className="fw-medium my-2 text-dark"
               onClick={handleClose}
             >
               My Work
             </Nav.Link>
             <Nav.Link
-              href="#about"
+              href="/about-contact"
               className="fw-medium my-2 text-dark"
               onClick={handleClose}
             >
@@ -91,15 +100,14 @@ const PortfolioNavbar = () => {
           <div className="text-center mt-5">
             <div className="mb-3">
               <span className="text-muted opacity-75">Email : </span>
-              nimish.tiwari0704@gmail.com
+              <a
+                href="mailto:nimish.tiwari0704@gmail.com"
+                className="text-decoration-none text-dark"
+              >
+                nimish.tiwari0704@gmail.com
+              </a>
             </div>
-            <BtnV1
-              label="Contact Me"
-              onClick={() => {
-                alert("Contact Me Clicked");
-                handleClose();
-              }}
-            />
+            <BtnV1 label="Contact Me" onClick={handleContactClick} />
           </div>
         </Offcanvas.Body>
       </Offcanvas>

@@ -2,8 +2,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import { point, hero, cursor } from "../../assets";
 import { BtnV2 } from "../../components/common";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="hero-section">
       <Container>
@@ -36,7 +38,7 @@ const HeroSection = () => {
             <div className=" mt-3">
               <BtnV2
                 label="See the Magic I Build"
-                onClick={() => alert("See My Work Clicked")}
+                onClick={() => navigate("/my-work")}
               />
             </div>
           </Col>

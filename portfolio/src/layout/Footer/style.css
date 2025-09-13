@@ -1,0 +1,43 @@
+.back-icon {
+  width: 48px;
+  height: 48px;
+  transform: rotate(-45deg);
+}
+.back-icon:hover {
+  transform: rotate(-45deg) scale(1.1);
+  transition: all 0.3s ease;
+}
+.footer-content {
+  border-top: 0.5px solid #3d3d3d;
+  border-bottom: 0.5px solid #3d3d3d;
+}
+
+.footer-heading {
+  line-height: 80px;
+  font-size: 60px;
+}
+.footer-content {
+  position: relative;
+  overflow: hidden;
+  z-index: 0; /* ensures content is above the ::before */
+}
+
+.footer-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../assets/lineDesignBg.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  transform: rotate(180deg);
+  z-index: -1; /* send it behind the content */
+}
+
+@media screen and (max-width: 768px) {
+  .footer-heading {
+     font-size: 36px;
+    line-height: 60px;
+  }
+
+}

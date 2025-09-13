@@ -7,6 +7,20 @@ import lineDesignBg from "./lineDesignBg.png";
 import cardbg1 from "./cardbg1.png";
 import cardbg2 from "./cardbg2.png";
 import cardbg3 from "./cardbg3.png";
-
-
-export { logoDark, bg, point, hero, cursor, lineDesignBg, cardbg1, cardbg2, cardbg3 };
+import footerhero from "./footerhero.png";
+import logoLight from "./logoLight.svg";
+import myImg from "./myImg.png";
+export {
+  logoDark,
+  bg,
+  point,
+  hero,
+  cursor,
+  lineDesignBg,
+  cardbg1,
+  cardbg2,
+  cardbg3,
+  footerhero,
+  logoLight,
+  myImg,
+};

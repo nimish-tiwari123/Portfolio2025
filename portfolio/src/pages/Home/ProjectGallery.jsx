@@ -20,9 +20,11 @@ import {
   tour,
   zioun,
 } from "../../assets/projectGallery";
+import { useNavigate } from "react-router-dom";
 import "./style.css";
 
 const ProjectGallery = () => {
+  const navigate = useNavigate();
   const images = [
     awns,
     awnsmanagement,
@@ -33,16 +35,17 @@ const ProjectGallery = () => {
     music,
     fitness,
     groceryapp,
-   
   ];
-  const images2 = [ growease,
+  const images2 = [
+    growease,
     gym,
     lighting,
     lighting2,
     marble,
     ott,
     tour,
-    zioun,];
+    zioun,
+  ];
 
   return (
     <div className="bg-custom-dark projectgallery-section py-5">
@@ -50,7 +53,7 @@ const ProjectGallery = () => {
         {/* Left Content */}
         <div className="mt-3">
           <p className="custom-primary fs-5">
-            <span className="text-light">{"{ My Project Gallery }"}</span>
+            {"{"} <span className="text-light">My Project Gallery</span> {"}"}
           </p>
 
           <h1 className="heading-hero text-light fw-normal">
@@ -64,7 +67,7 @@ const ProjectGallery = () => {
         <div className="mt-3">
           <BtnV2
             label="View All Projects"
-            onClick={() => alert("See My Work Clicked")}
+            onClick={() => navigate("/my-work")}
           />
         </div>
       </Container>
@@ -90,7 +93,7 @@ const ProjectGallery = () => {
           ))}
         </Marquee>
       </div>
-        <div className="mt-4 position-relative">
+      <div className="mt-4 position-relative">
         <div className="img-marquee-fade fade-left" />
         <div className="img-marquee-fade fade-right" />
         <Marquee

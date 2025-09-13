@@ -36,7 +36,7 @@ const TechStack = () => {
               <img src={point} alt="design" /> Tools & Skills
             </p>
             <h1 className="heading-hero fw-normal ">
-              My creative <br /> toolbox
+              My creative toolbox
             </h1>
           </Col>
 

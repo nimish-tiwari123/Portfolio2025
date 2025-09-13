@@ -1,0 +1,11 @@
+import awns from "./awns.png";
+import awnsManagement from "./awnsManagement.png";
+import balaji from "./balaji.png";
+import brevio from "./brevio.png";
+import delivery from "./delivery.png";
+import grociahub from "./grociahub.png";
+import music from "./music.png";
+import grocery from "./grocery.png";
+import zioun from "./zioun.png";
+
+export { awns, awnsManagement, balaji, brevio, delivery, grociahub, music, grocery, zioun };

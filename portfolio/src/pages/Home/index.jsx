@@ -1,4 +1,5 @@
 import InfiniteMarquee from "../../components/section/Marquee";
+import ContactSection from "./ContactSection";
 import HeroSection from "./HeroSection";
 import ProjectGallery from "./ProjectGallery";
 import ProjectSection from "./ProjectSection";
@@ -38,6 +39,9 @@ const Home = () => {
       <InfiniteMarquee items={stats2} speed={45} gap={56} />
       <ProjectGallery/>
       <StatsSection />
+      <ContactSection/>
+      <InfiniteMarquee items={stats} speed={45} gap={56} />
+
     </div>
   );
 };
