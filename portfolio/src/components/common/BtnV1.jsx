@@ -1,11 +1,10 @@
 import "./style.css";
 
-const BtnV1 = ({ label, onClick, variant = "dark" }) => {
+const BtnV1 = ({ label, pad, onClick, variant = "dark" }) => {
   return (
     <button
-      variant={variant}
       onClick={onClick}
-      className="rounded-pill btnV1 border-0 fw-medium"
+      className={`rounded-pill btnV1 border-0 fw-medium ${variant} ${pad}`}
     >
       {label}
     </button>
