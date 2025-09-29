@@ -7,5 +7,5 @@ import grociahub from "./grociahub.png";
 import music from "./music.png";
 import grocery from "./grocery.png";
 import zioun from "./zioun.png";
-
-export { awns, awnsManagement, balaji, brevio, delivery, grociahub, music, grocery, zioun };
+import marbleGalaxy from "./marbleGalaxy.png";
+export { awns, awnsManagement, balaji, brevio, delivery, grociahub, music, grocery, zioun, marbleGalaxy };

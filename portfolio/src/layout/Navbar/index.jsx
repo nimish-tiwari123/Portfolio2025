@@ -70,7 +70,7 @@ const PortfolioNavbar = () => {
         show={show}
         onHide={handleClose}
         placement="top"
-        className="h-50"
+        className="h-50 pb-5"
       >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
