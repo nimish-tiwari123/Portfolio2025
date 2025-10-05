@@ -41,8 +41,8 @@ const Projects = () => {
       description:
         "Zioun is an intelligent meal tracking SaaS product that simplifies nutrition management, monitors daily intake, and offers multiple services to support healthier lifestyle choices.",
       image: zioun,
-      link: "https://example.com/zioun-project.pdf",
-      type: "pdf",
+      link: "https://www.figma.com/proto/xL98aRS4OZqAkmuQaDbExO/Zioun-Project-Preview?node-id=1-3&t=5WaoacgIRLFN1phj-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&hide-ui=1",
+      type: "url",
     },
     {
       category: "Web Design",

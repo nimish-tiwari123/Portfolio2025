@@ -4,17 +4,16 @@ import { BtnV1 } from "../../components/common";
 import { logoDark as logo } from "../../assets";
 import { menu } from "../../assets/icons";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 const PortfolioNavbar = () => {
+  const navigate = useNavigate();
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const handleContactClick = () => {
-    window.location.href = "mailto:nimish.tiwari0704@gmail.com";
-    handleClose();
-  };
+ 
 
   return (
     <>
@@ -59,7 +58,7 @@ const PortfolioNavbar = () => {
                   nimish.tiwari0704@gmail.com
                 </a>
               </div>
-              <BtnV1 label="Contact Me" onClick={handleContactClick} />
+              <BtnV1 label="Contact Me" onClick={()=>navigate("/about-contact")} />
             </div>
           </div>
         </Container>
@@ -107,7 +106,7 @@ const PortfolioNavbar = () => {
                 nimish.tiwari0704@gmail.com
               </a>
             </div>
-            <BtnV1 label="Contact Me" onClick={handleContactClick} />
+            <BtnV1 label="Contact Me" onClick={()=>navigate("/about-contact")} />
           </div>
         </Offcanvas.Body>
       </Offcanvas>
