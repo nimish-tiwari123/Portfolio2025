@@ -6,7 +6,7 @@ const BtnV1 = ({ label, pad, onClick, variant = "dark" }) => {
       onClick={onClick}
       className={`rounded-pill btnV1 border-0 fw-medium ${variant} ${pad}`}
     >
-      {label}
+       {label}
     </button>
   );
 };
