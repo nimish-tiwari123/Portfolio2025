@@ -48,7 +48,7 @@ const AboutContact = () => {
             </div>
 
             {/* Phone */}
-            <div className="d-flex gap-3 mt-4">
+            {/* <div className="d-flex gap-3 mt-4">
               <div>
                 <img src={call} alt="call" />
               </div>
@@ -56,7 +56,7 @@ const AboutContact = () => {
                 <p className="fs-5 opacity-50 m-0">Contact No.</p>
                 <p className="fs-4 fw-medium m-0">+91 99264 91887</p>
               </div>
-            </div>
+            </div> */}
           </Col>
 
           {/* Right Column */}
