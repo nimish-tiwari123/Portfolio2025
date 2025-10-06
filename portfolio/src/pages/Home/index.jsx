@@ -8,12 +8,12 @@ import TechStack from "./TechStack";
 
 const Home = () => {
   const stats = [
-    "1.5+ / year experience",
-    "100% / satisfied clients",
-    "18+ / project completed",
-    "1.5+ / year experience",
-    "100% / satisfied clients",
-    "18+ / project completed",
+    "2+ / year experience",
+    "95% / satisfied clients",
+    "22+ / project completed",
+    "2+ / year experience",
+    "95% / satisfied clients",
+    "22+ / project completed",
   ];
   const stats2 = [
     "Healthcare",
