@@ -119,7 +119,7 @@ const Projects = () => {
         <h1 className="heading-hero fw-normal display-4 text-center">
           Selected Work
         </h1>
-        <Row className="g-4 g-md-5 px-0 mx-0 px-lg-5 mt-2 mt-md-4 mx-lg-5">
+        <Row className="g-4 g-md-5 px-0 mx-0 px-lg-5 mt-2 mt-md-4 mx-lg-4 ">
           {projectData.map((project, index) => (
             <Col key={index} md={12} className="p-2">
               <div className="d-flex flex-column">
