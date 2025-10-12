@@ -3,19 +3,19 @@ import "./style.css";
 
 const statsData = [
   {
-    value: "95+",
+    value: "95%",
     label: "Customer Satisfaction",
     sub: "Percent",
     variant: "success-card",
   },
   {
-    value: "1.5+",
+    value: "2+",
     label: "Experience",
     sub: "Years",
     variant: "dark-card",
   },
   {
-    value: "18+",
+    value: "22+",
     label: "Projects Completed",
     sub: "Projects",
     variant: "light-card",
