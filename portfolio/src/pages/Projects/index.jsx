@@ -136,7 +136,7 @@ const Projects = () => {
                       {"}"}
                     </p>
                     <h2 className="fw-normal project-title">{project.title}</h2>
-                    <p className="mt-2 mt-md-3 opacity-50 custom-line project-desc">
+                    <p className="mt-2 mt-md-3 opacity-50  custom-line project-desc">
                       {project.description}
                     </p>
                   </Col>
