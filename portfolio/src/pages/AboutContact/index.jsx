@@ -40,40 +40,29 @@ const AboutContact = () => {
               </div>
               <div className="text-start">
                 <p className="fs-5 opacity-50 m-0">Email Address</p>
-                <p className="fs-4 fw-medium m-0">
+                <p className="fs-5 fw-medium m-0">
                   nimish.tiwari0704<span className="custom-primary">@</span>
                   gmail.com
                 </p>
               </div>
             </div>
 
-            {/* Phone */}
-            {/* <div className="d-flex gap-3 mt-4">
-              <div>
-                <img src={call} alt="call" />
-              </div>
-              <div className="text-start">
-                <p className="fs-5 opacity-50 m-0">Contact No.</p>
-                <p className="fs-4 fw-medium m-0">+91 99264 91887</p>
-              </div>
-            </div> */}
+         
           </Col>
 
           {/* Right Column */}
           <Col xs={12} md={6} className="overflow-auto h-100 mt-5 mt-md-0">
             <p className="fs-4 fw-medium">Hi, I’m Nimish Tiwari</p>
             <p className="fs-5 fw-medium line36">
-              I’m a dedicated UI/UX & front-end designer with a passion for
-              crafting beautiful, responsive, and user-friendly digital
-              experiences. Skilled in Figma, React.js, Next.js, and modern
-              front-end technologies, I build interfaces that are both visually
-              appealing and easy to use across devices.
+              I design simple, clean, and meaningful digital experiences that
+              put users first. With a strong eye for detail and a background in
+              front-end development, I bring ideas to life through thoughtful
+              and intuitive UI/UX design.
             </p>
 
             <p className="fs-5 opacity-50 line36">
-              From case studies to dynamic web portals, I combine design and
-              development to create engaging digital products for startups and
-              creators.
+              From research to final UI, I blend design and development to
+              create engaging digital experiences for startups and creators.
             </p>
             <p className="fs-5 fw-medium">
               Let’s connect and make your vision come to life.

@@ -14,7 +14,7 @@ import {
 
 import { point } from "../../assets";
 import { BtnV1 } from "../../components/common";
-
+import "./style.css";
 const Projects = () => {
   const projectData = [
     {
@@ -112,7 +112,7 @@ const Projects = () => {
 
   return (
     <div>
-      <Container className="py-5 my-lg-5">
+      <Container className="py-5 my-lg-5 ">
         <p className="d-flex  gap-2 justify-content-center">
           <img src={point} alt="design" /> My recent works
         </p>
@@ -130,13 +130,13 @@ const Projects = () => {
                 />
                 <Row className="py-4 ">
                   <Col md={9}>
-                    <p className="custom-primary fs-5 fw-medium">
+                    <p className="custom-primary fw-medium project-category">
                       {"{"}{" "}
-                      <span className="text-dark">{project.category}</span>{" "}
+                      <span className="text-dark ">{project.category}</span>{" "}
                       {"}"}
                     </p>
-                    <h2 className="fs-1 fw-normal ">{project.title}</h2>
-                    <p className="fs-5 mt-2 mt-md-3 opacity-50 custom-line">
+                    <h2 className="fw-normal project-title">{project.title}</h2>
+                    <p className="mt-2 mt-md-3 opacity-50 custom-line project-desc">
                       {project.description}
                     </p>
                   </Col>

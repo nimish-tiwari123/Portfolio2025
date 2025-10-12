@@ -5,7 +5,7 @@ const BtnV2 = ({ label, onClick }) => {
   return (
     <button
       onClick={onClick}
-      className="rounded-pill btnV2 border-0 fw-medium d-flex justify-content-center align-items-center gap-2 fs-5 bg-custom-primary mt-5"
+      className="rounded-pill btnV2 border-0 fw-medium d-flex justify-content-center align-items-center gap-2 bg-custom-primary mt-5"
     >
       {label}
       <div className="rounded-circle bg-white p-1">

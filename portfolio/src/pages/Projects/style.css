@@ -1,0 +1,21 @@
+.project-category{
+    font-size: 1rem;
+}
+.project-title{
+    font-size: 3rem;
+}
+.project-desc{
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width:570px){
+   .project-category{
+    font-size: 1rem;
+}
+.project-title{
+    font-size: 1.5rem;
+}
+.project-desc{
+    font-size: 1rem;
+} 
+}

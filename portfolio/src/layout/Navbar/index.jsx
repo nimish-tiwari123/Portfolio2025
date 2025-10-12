@@ -4,7 +4,7 @@ import { BtnV1 } from "../../components/common";
 import { logoDark as logo } from "../../assets";
 import { menu } from "../../assets/icons";
 import "./style.css";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const PortfolioNavbar = () => {
   const navigate = useNavigate();
@@ -38,14 +38,27 @@ const PortfolioNavbar = () => {
 
           {/* Normal desktop nav */}
           <div className="d-none d-lg-flex justify-content-center w-100">
-            <Nav className="mx-auto">
-              <Nav.Link href="/my-work" className="fw-medium mx-3">
-                My Work
-              </Nav.Link>
-              <Nav.Link href="/about-contact" className="fw-medium mx-3">
-                About & Contact
-              </Nav.Link>
-            </Nav>
+          <Nav className="mx-auto">
+  <NavLink
+    to="/my-work"
+    className={({ isActive }) =>
+      `fw-medium mx-3 nav-link ${isActive ? "active" : ""}`
+    }
+    onClick={handleClose}
+  >
+    My Work
+  </NavLink>
+  <NavLink
+    to="/about-contact"
+    className={({ isActive }) =>
+      `fw-medium mx-3 nav-link ${isActive ? "active" : ""}`
+    }
+    onClick={handleClose}
+  >
+    About & Contact
+  </NavLink>
+</Nav>
+
 
             {/* Right Side Email + Button */}
             <div className="d-flex align-items-center">
@@ -69,7 +82,7 @@ const PortfolioNavbar = () => {
         show={show}
         onHide={handleClose}
         placement="top"
-        className="h-50 pb-5"
+        className="h-offcanvas pb-5 "
       >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
@@ -79,22 +92,27 @@ const PortfolioNavbar = () => {
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <Nav className="flex-column text-center">
-            <Nav.Link
-              href="/my-work"
-              className="fw-medium my-2 text-dark"
-              onClick={handleClose}
-            >
-              My Work
-            </Nav.Link>
-            <Nav.Link
-              href="/about-contact"
-              className="fw-medium my-2 text-dark"
-              onClick={handleClose}
-            >
-              About & Contact
-            </Nav.Link>
-          </Nav>
+         <Nav className="flex-column text-center">
+  <NavLink
+    to="/my-work"
+    className={({ isActive }) =>
+      `fw-medium my-2 text-dark nav-link ${isActive ? "active" : ""}`
+    }
+    onClick={handleClose}
+  >
+    My Work
+  </NavLink>
+  <NavLink
+    to="/about-contact"
+    className={({ isActive }) =>
+      `fw-medium my-2 text-dark nav-link ${isActive ? "active" : ""}`
+    }
+    onClick={handleClose}
+  >
+    About & Contact
+  </NavLink>
+</Nav>
+
 
           <div className="text-center mt-5">
             <div className="mb-3">

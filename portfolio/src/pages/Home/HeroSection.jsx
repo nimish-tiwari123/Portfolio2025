@@ -12,7 +12,7 @@ const HeroSection = () => {
         <Row>
           <Col
             xs={12}
-            md={4}
+            md={5}
             className="mt-md-5 position-relative order-1 order-md-2 text-center"
           >
             <img src={hero} alt="hero img" className="w-100" />
@@ -25,7 +25,7 @@ const HeroSection = () => {
           </Col>
 
           {/* Text Column */}
-          <Col xs={12} md={8} className="order-2 order-md-1 mt-5 mt-md-0">
+          <Col xs={12} md={7} className="order-2 order-md-1 mt-5 mt-md-0">
             <p className="d-flex  gap-2">
               <img src={point} alt="design" /> Available for Full-Time Roles
             </p>

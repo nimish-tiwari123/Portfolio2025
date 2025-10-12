@@ -13,8 +13,8 @@
 }
 
 .footer-heading {
-  line-height: 80px;
-  font-size: 60px;
+   line-height: 76px;
+  font-size: 52px;
 }
 .footer-content {
   position: relative;
@@ -36,8 +36,8 @@
 
 @media screen and (max-width: 768px) {
   .footer-heading {
-     font-size: 36px;
-    line-height: 60px;
+     font-size: 28px;
+    line-height: 48px;
   }
 
 }
