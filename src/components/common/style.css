@@ -1,0 +1,46 @@
+.btnV1 {
+  background-color: var(--dark);
+  padding: 10px 24px;
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+
+.btnV1:hover {
+  background-color: var(--primary);
+  color: var(--dark);
+  box-shadow: 0px 10px 4px 0px #d6ef311a;
+}
+
+.btnV2 {
+  box-shadow: 0px 20px 20px 0px #8cff2e40;
+  padding: 12px 12px 12px 24px;
+  transition: all 0.4s ease; 
+  font-size: 20px;
+}
+
+.btnV2:hover {
+  box-shadow: none;
+}
+
+.btnV2 .arrow {
+  transition: all 0.4s ease; 
+}
+
+.btnV2:hover .arrow {
+  transform: rotateZ(45deg);
+}
+
+
+@media screen and (max-width:768px) {
+  .btnV1 {
+  padding: 6px 16px;
+  font-size: 14px;
+  }
+.btnV2{
+  padding: 8px 8px 8px 16px;
+}
+.arrow{
+  width: 24px;
+  height: 24px;
+}
+}
