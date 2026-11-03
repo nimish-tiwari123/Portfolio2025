@@ -5,10 +5,10 @@ const BtnV2 = ({ label, onClick }) => {
   return (
     <button
       onClick={onClick}
-      className="rounded-pill btnV2 border-0 fw-medium d-flex justify-content-center align-items-center gap-2 bg-custom-primary mt-5"
+      className="rounded-pill btnV2 border-0 fw-bold d-flex justify-content-center align-items-center gap-1 bg-custom-primary mt-3 mt-md-4"
     >
       {label}
-      <div className="rounded-circle bg-white p-1">
+      <div>
         <img src={arrow} alt="arrow" className="arrow"/>
       </div>
     </button>

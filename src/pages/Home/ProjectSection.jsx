@@ -29,7 +29,7 @@ const ProjectSection = () => {
                 {"{"} <span className="text-light">My Work</span> {"}"}
               </p>
 
-              <h1 className="heading-hero text-light fw-normal">
+              <h1 className="text-light fw-medium">
                 Each project isn’t just a task - it’s a chance to learn, grow,
                 and evolve.
               </h1>
@@ -65,7 +65,7 @@ const ProjectSection = () => {
                   {"}"}
                 </p>
 
-                <h2 className="fs-3 fw-normal text-light ms-md-4">
+                <h2 className="fs-3 fw-semibold text-light ms-md-4">
                   Brevio Storytelling Platform
                 </h2>
                 <p className="text-light opacity-50 ms-md-4 mt-2 ">
@@ -79,34 +79,32 @@ const ProjectSection = () => {
               />
             </Col>
 
-            <Col
-              xs={12}
-              md={6}
-              className="border-custom-bottom border-custom-start pt-5 project-card"
-              onClick={() =>
-                handleOpenProject(
-                  "https://www.figma.com/design/Z85FNRtJNBe1AObu2sYyyC/GrociaHub?node-id=0-1&p=f&t=Yr2yTvPSCBNILi6k-0"
-                )
-              }
-            >
-              <div className="px-md-5">
-                <p className="custom-primary ms-md-4 mb-2">
-                  {"{"} <span className="text-light">Web Design</span> {"}"}
-                </p>
+          <Col
+  xs={12}
+  md={6}
+  className="border-custom-bottom border-custom-start pt-5 project-card"
+ onClick={()=>handleOpenProject("https://play.google.com/store/apps/details?id=com.pachoo&hl=en_IN")}
+>
+  <div className="px-md-5">
+    <p className="custom-primary ms-md-4 mb-2">
+      {"{"} <span className="text-light">Mobile App</span> {"}"}
+    </p>
 
-                <h2 className="fs-3 fw-normal text-light ms-md-4">
-                  GrociaHub Grocery Platform
-                </h2>
-                <p className="text-light opacity-50 ms-md-4 mt-2 ">
-                  UI/UX Design & Development
-                </p>
-              </div>
-              <img
-                src={grociahub}
-                alt="Grocery Website Project"
-                className="w-100 mt-4 px-md-4 pb-4 project-image"
-              />
-            </Col>
+    <h2 className="fs-3 fw-semibold text-light ms-md-4">
+      Pachoo Customer App
+    </h2>
+
+    <p className="text-light opacity-50 ms-md-4 mt-2">
+      UI/UX Design & Development
+    </p>
+  </div>
+
+  <img
+    src={grociahub}
+    alt="Pachoo Customer App Project"
+    className="w-100 mt-4 px-md-4 pb-4 project-image"
+  />
+</Col>
           </Row>
 
           <Row>
@@ -121,7 +119,7 @@ const ProjectSection = () => {
                   {"{"} <span className="text-light">App Design</span> {"}"}
                 </p>
 
-                <h2 className="fs-3 fw-normal text-light ms-md-2">
+                <h2 className="fs-3 fw-semibold text-light ms-md-2">
                   Delivery Partner App
                 </h2>
                 <p className="text-light opacity-50 ms-md-2 mt-2 ">
@@ -146,7 +144,7 @@ const ProjectSection = () => {
                   {"{"} <span className="text-light">Web Design</span> {"}"}
                 </p>
 
-                <h2 className="fs-3 fw-normal text-light ms-md-2">
+                <h2 className="fs-3 fw-semibold text-light ms-md-2">
                   Groova Music Web Page
                 </h2>
                 <p className="text-light opacity-50 ms-md-2 mt-2 ">

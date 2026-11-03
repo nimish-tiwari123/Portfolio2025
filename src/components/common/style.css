@@ -13,9 +13,9 @@
 
 .btnV2 {
   box-shadow: 0px 20px 20px 0px #8cff2e40;
-  padding: 12px 12px 12px 24px;
+  padding: 8px 12px 8px 24px;
   transition: all 0.4s ease; 
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .btnV2:hover {
@@ -38,6 +38,7 @@
   }
 .btnV2{
   padding: 8px 8px 8px 16px;
+  font-size: 14px;
 }
 .arrow{
   width: 24px;
