@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { appRoutesConstants } from "./appRoutesConstants.js";
-import { Home, Projects, AboutContact } from "../pages/index.js";
+import { Home, Projects, AboutContact, PachooProject } from "../pages/index.js";
 import { Footer, Navbar } from "../layout/index.js";
 
 const ScrollToTop = () => {
@@ -26,6 +26,7 @@ const AppRoutes = () => {
           path={appRoutesConstants.aboutContact}
           element={<AboutContact />}
         />
+        <Route path={appRoutesConstants.pachoo} element={<PachooProject />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,0 +1,206 @@
+
+.primary-pachoo-color {
+  color: #F9BB30;
+}
+.secondary-pachoo-color {
+  color: #E53935;
+}
+
+.pachoo-brand-logo{
+  width: 200px;
+  height: auto;
+  
+}
+.pachoo-description {
+  max-width: 650px;
+
+}
+
+.img-container-pachoo {
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+ 
+
+  .pachoo-hero-content h1 {
+    letter-spacing: -1.5px;
+    font-size: clamp(38px, 9vw, 55px);
+  }
+
+  .img-container-pachoo {
+  width: 100%;
+}
+}
+
+
+
+/* Project Overview */
+
+.pachoo-overview {
+  background: #f8f8f8;
+}
+
+.overview-detail,
+.platform-card {
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+.platform-card {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.platform-card:hover {
+  transform: translateY(-5px);
+}
+
+.platform-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #f9bb30;
+  overflow: hidden;
+}
+
+.platform-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.platform-number {
+  font-size: 14px;
+  font-weight: 700;
+  color: #999;
+}
+
+
+
+.store-btn .store-icon {
+  color: #fff !important;
+  fill: #fff !important;
+  font-size: 17px;
+}
+
+
+
+
+/* THE CHALLENGE */
+
+
+.challenge-intro {
+  color: #aaa;
+  line-height: 1.8;
+}
+
+.challenge-card {
+  background: #151515;
+  border: 1px solid #292929;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.challenge-card:hover {
+  border-color: #8cff2e;
+  transform: translateY(-5px);
+}
+
+
+.challenge-card h4 {
+  color: #fff;
+}
+
+.challenge-card p {
+  color: #aaa;
+  line-height: 1.8;
+}
+
+
+
+.challenge-insight .info-label {
+  color: #333;
+}
+
+.challenge-insight h3 {
+  max-width: 900px;
+  line-height: 1.4;
+}
+
+
+
+/* MY ROLE & RESPONSIBILITIES */
+
+.pachoo-role {
+  background: #fff;
+  color: #0a0a0a;
+}
+
+.role-highlight {
+  background: #f9bb30;
+}
+
+.role-highlight .info-label {
+  color: #5b4615;
+}
+
+.role-highlight .text-secondary {
+  color: #51421f !important;
+}
+
+.role-meta {
+  border-top: 1px solid rgba(10, 10, 10, 0.2);
+  padding-top: 14px;
+}
+
+.role-meta span {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #51421f;
+}
+
+.role-meta h6 {
+  font-weight: 700;
+  margin: 6px 0 0;
+}
+
+.role-responsibilities {
+  background: #f7f7f7;
+  border: 1px solid #eee;
+}
+
+.responsibility-item {
+  border-top: 1px solid #ddd;
+  padding-top: 18px;
+}
+
+.responsibility-item span {
+  color: #e53935;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.responsibility-item p {
+  line-height: 1.7;
+}
+
+
+
+/* DESIGN SYSTEM & VISUAL IDENTITY */
+
+.pachoo-design-system {
+  background: #f7f7f7;
+}
+
+.design-system-image {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  padding: 12px;
+}
+
+.design-system-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
