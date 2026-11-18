@@ -100,33 +100,16 @@
   border: 1px solid #292929;
   border-radius: 16px;
   transition: all 0.3s ease;
+  
 }
 
 .challenge-card:hover {
-  border-color: #8cff2e;
+  border-color: #F9BB30;
   transform: translateY(-5px);
 }
 
 
-.challenge-card h4 {
-  color: #fff;
-}
 
-.challenge-card p {
-  color: #aaa;
-  line-height: 1.8;
-}
-
-
-
-.challenge-insight .info-label {
-  color: #333;
-}
-
-.challenge-insight h3 {
-  max-width: 900px;
-  line-height: 1.4;
-}
 
 
 
@@ -187,20 +170,4 @@
 
 
 
-/* DESIGN SYSTEM & VISUAL IDENTITY */
 
-.pachoo-design-system {
-  background: #f7f7f7;
-}
-
-.design-system-image {
-  background: #fff;
-  border: 1px solid #eaeaea;
-  padding: 12px;
-}
-
-.design-system-image img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}

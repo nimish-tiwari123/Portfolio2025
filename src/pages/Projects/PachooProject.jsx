@@ -2,7 +2,7 @@
 import "./PachooProject.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaGooglePlay, FaApple } from "react-icons/fa";
-import { pachooSplash, pachooLogo } from "../../assets/projects/index.js";
+import { pachooSplash, pachooLogo, customerAppMockup, restaurantAppMockup, deliveryAppMockup, admin, designSystem} from "../../assets/projects/index.js";
 
 // Reusable App Store Buttons
 const AppStores = ({ playStoreUrl, appStoreUrl }) => (
@@ -84,7 +84,7 @@ const PachooProject = () => {
       title: "Customer App",
       description:
         "Discover nearby restaurants, explore menus, place orders and track deliveries seamlessly.",
-      image: "/images/customer-app-placeholder.jpg",
+      image: customerAppMockup,
 
       playStoreUrl:
         "https://play.google.com/store/apps/details?id=com.pachoo&pcampaignid=web_share",
@@ -96,7 +96,7 @@ const PachooProject = () => {
       title: "Restaurant Partner App",
       description:
         "Manage menus, receive orders, update order status and monitor restaurant operations.",
-      image: "/images/restaurant-app-placeholder.jpg",
+      image: restaurantAppMockup,
 
       playStoreUrl:
         "https://play.google.com/store/apps/details?id=com.pachoo.restaurantpartner&pcampaignid=web_share",
@@ -108,7 +108,7 @@ const PachooProject = () => {
       title: "Delivery Partner App",
       description:
         "Accept delivery requests, manage assigned orders and complete deliveries efficiently.",
-      image: "/images/delivery-app-placeholder.jpg",
+      image: deliveryAppMockup,
 
       playStoreUrl:
         "https://play.google.com/store/apps/details?id=com.pachoo.deliverypartner&pcampaignid=web_share",
@@ -120,7 +120,7 @@ const PachooProject = () => {
       title: "Admin Panel",
       description:
         "Manage customers, restaurants, delivery partners, orders and overall platform operations.",
-      image: "/images/admin-panel-placeholder.jpg",
+      image: admin,
       isAdmin: true,
     },
   ];
@@ -265,105 +265,88 @@ const PachooProject = () => {
 
       {/* ================= THE CHALLENGE ================= */}
 
-      <section className="pachoo-challenge bg-custom-dark py-5 ">
-        <Container className="py-lg-5">
+     
+<section className="pachoo-challenge bg-custom-dark py-5">
+  <Container className="py-lg-4">
 
-          {/* Section Heading */}
-          <Row className="align-items-end mb-5">
-            <Col lg={7}>
-              <span className="pachoo-label custom-primary">
-                02 — THE CHALLENGE
-              </span>
+    {/* Section Heading */}
+    <Row className="align-items-end mb-4">
+      <Col lg={7}>
+        <span className="pachoo-label primary-pachoo-color">
+          02 — THE CHALLENGE
+        </span>
 
-              <h2 className="display-4 fw-bold mt-3 text-light">
-                Bringing Convenience <br />
-                Beyond City Limits.
-              </h2>
-            </Col>
+        <h2 className="display-4 fw-bold mt-3 text-light">
+          Bringing Convenience <br />
+          Beyond City Limits.
+        </h2>
+      </Col>
 
-            <Col lg={5}>
-              <p className="challenge-intro mb-0">
-                Building a delivery experience for smaller towns and
-                villages meant solving challenges beyond just placing
-                an order. The platform needed to work around local
-                limitations, user behaviour and business needs.
-              </p>
-            </Col>
-          </Row>
+      <Col lg={5}>
+        <p className="challenge-intro mb-0">
+          Bringing online delivery to smaller towns meant making
+          ordering simple, connecting local shops and solving
+          delivery challenges.
+        </p>
+      </Col>
+    </Row>
 
-          {/* Challenge Cards */}
-          <Row className="g-4">
+    {/* Challenge Cards */}
+    <Row className="g-3">
 
-            <Col md={6}>
-              <div className="challenge-card h-100 p-4">
-                <span className="challenge-number custom-primary fw-bold">01</span>
-                <h4 className="fw-bold mt-4">
-                  Limited Digital Familiarity
-                </h4>
-                <p className="mb-0">
-                  Many users were less familiar with digital ordering
-                  platforms, making simple navigation, clear language
-                  and easy interactions essential.
-                </p>
-              </div>
-            </Col>
+      <Col md={6}>
+        <div className="challenge-card h-100 p-3 p-lg-4">
+          <span className="challenge-number primary-pachoo-color fw-bold ">01</span>
+          <h5 className="fw-bold mt-3 text-light">
+            Easy to Use
+          </h5>
+          <p className="mb-0 text-light opacity-75 fw-light">
+            Making the app simple for people new to online ordering.
+          </p>
+        </div>
+      </Col>
 
-            <Col md={6}>
-              <div className="challenge-card h-100 p-4">
-                <span className="challenge-number custom-primary fw-bold">02</span>
-                <h4 className="fw-bold mt-4">
-                  Scattered Local Businesses
-                </h4>
-                <p className="mb-0">
-                  Customers often relied on calls or physical visits
-                  to discover nearby restaurants and access local
-                  products and services.
-                </p>
-              </div>
-            </Col>
+      <Col md={6}>
+        <div className="challenge-card h-100 p-3 p-lg-4">
+          <span className="challenge-number primary-pachoo-color fw-bold">02</span>
+          <h5 className="fw-bold mt-3 text-light">
+            Finding Local Shops
+          </h5>
+          <p className="mb-0 text-light opacity-75 fw-light">
+            Bringing nearby restaurants and local businesses together.
+          </p>
+        </div>
+      </Col>
 
-            <Col md={6}>
-              <div className="challenge-card h-100 p-4">
-                <span className="challenge-number custom-primary fw-bold">03</span>
-                <h4 className="fw-bold mt-4">
-                  Delivery & Connectivity Limitations
-                </h4>
-                <p className="mb-0">
-                  Serving multiple villages across wider distances
-                  required a practical approach to delivery coverage,
-                  order tracking and location management.
-                </p>
-              </div>
-            </Col>
+      <Col md={6}>
+        <div className="challenge-card h-100 p-3 p-lg-4">
+          <span className="challenge-number primary-pachoo-color fw-bold">03</span>
+          <h5 className="fw-bold mt-3 text-light">
+            Reaching Nearby Areas
+          </h5>
+          <p className="mb-0 text-light opacity-75 fw-light">
+            Managing deliveries across towns and surrounding villages.
+          </p>
+        </div>
+      </Col>
 
-            <Col md={6}>
-              <div className="challenge-card h-100 p-4">
-                <span className="challenge-number custom-primary fw-bold">04</span>
-                <h4 className="fw-bold mt-4">
-                  Managing Multiple Stakeholders
-                </h4>
-                <p className="mb-0">
-                  Customers, restaurant owners, delivery partners
-                  and administrators each needed different tools
-                  while remaining connected through one ecosystem.
-                </p>
-              </div>
-            </Col>
+      <Col md={6}>
+        <div className="challenge-card h-100 p-3 p-lg-4">
+          <span className="challenge-number primary-pachoo-color fw-bold">04</span>
+          <h5 className="fw-bold mt-3 text-light">
+            Connecting Everyone
+          </h5>
+          <p className="mb-0 text-light opacity-75 fw-light">
+            Bringing customers, restaurants and delivery partners onto one platform.
+          </p>
+        </div>
+      </Col>
 
-          </Row>
+    </Row>
 
-          {/* Key Insight */}
-          <div className="challenge-insight mt-5 p-4 p-lg-5 rounded-4 bg-custom-primary">
-            <span className="info-label">KEY DESIGN CONSIDERATION</span>
-            <h3 className="fw-bold mt-3 mb-0">
-              The experience had to be simple enough for first-time
-              digital users, yet powerful enough to manage an entire
-              local delivery ecosystem.
-            </h3>
-          </div>
+  </Container>
+</section>
 
-        </Container>
-      </section>
 
 
       {/* ================= MY ROLE & RESPONSIBILITIES ================= */}
@@ -503,7 +486,7 @@ const PachooProject = () => {
           {/* Complete Design System Image */}
           <div className="design-system-image rounded-4 overflow-hidden">
             <img
-              src="/images/pachoo-design-system.png"
+              src={designSystem}
               alt="Pachoo complete design system showing colors, typography and UI components"
               className="img-fluid w-100 d-block"
             />
