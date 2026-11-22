@@ -3,20 +3,28 @@ import {
   awns,
   awnsManagement,
   balaji,
-  brevio,
-  delivery,
   grociahub,
   music,
   grocery,
   zioun,
   marbleGalaxy
 } from "../../assets/projectPage";
+import {pachoo, brevio, linxed, fullteam, ludo} from "../../assets/projects/projectPage";
 
 import { point } from "../../assets";
 import { BtnV1 } from "../../components/common";
 import "./style.css";
 const Projects = () => {
   const projectData = [
+    {
+  category: "Web & App Design",
+  title: "Pachoo Food Delivery Ecosystem",
+  description:
+    "Pachoo is a hyperlocal food delivery platform connecting customers, restaurants, and delivery partners across 180+ villages through a simple and convenient digital experience.",
+  image: pachoo,
+  link: "YOUR_PACHOO_FIGMA_LINK",
+  type: "pdf",
+},
     {
       category: "Web & App Design",
       title: "Brevio Storytelling Platform",
@@ -26,15 +34,34 @@ const Projects = () => {
       link: "https://www.figma.com/proto/hHlE82fUJyNg5Ar1ziLkzk/Brevio-Project?node-id=1-3&t=E8HWrUxwnTB9TsKC-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
       type: "pdf",
     },
+   
     {
-      category: "App Design",
-      title: "Delivery Partner App",
-      description:
-        "The Delivery Partner App enables agents to accept orders, track routes, manage deliveries, and earn seamlessly with real-time updates.",
-      image: delivery,
-      link: "https://www.figma.com/proto/AgDyPyyj1cifIrYS6i2ekx/Delivery-Partner-App?node-id=1-3&t=Vqj9Lvkh3chNAc1Q-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&hide-ui=1",
-      type: "url",
-    },
+  category: "App & Web Design",
+  title: "Family Engagement Platform",
+  description:
+    "A connected educational platform that helps families track student performance, monitor learning progress, and stay engaged through insights and seamless collaboration.",
+  image: linxed,
+  link: "YOUR_FIGMA_LINK",
+  type: "url",
+},
+{
+  category: "App Design",
+  title: "Football Team Management Platform",
+  description:
+    "A smart football management platform that helps coaches and teams plan match strategies, assign player roles, track live matches, and analyze team performance through real-time insights.",
+  image: fullteam,
+  link: "YOUR_FIGMA_LINK",
+  type: "url",
+},
+{
+  category: "App & Web Design",
+  title: "Ludo Gaming Platform",
+  description:
+    "An interactive multiplayer Ludo platform that allows players to connect, compete, and enjoy real-time games with friends through engaging gameplay, multiple features, and a seamless gaming experience.",
+  image: ludo,
+  link: "YOUR_FIGMA_LINK",
+  type: "url",
+},
     {
       category: "Web Design",
       title: "Zioun – Smart Meal SaaS Solution",
@@ -135,7 +162,7 @@ const Projects = () => {
                       <span className="text-dark ">{project.category}</span>{" "}
                       {"}"}
                     </p>
-                    <h2 className="fw-normal project-title">{project.title}</h2>
+                    <h2 className="fw-normal project-title fw-bold">{project.title}</h2>
                     <p className="mt-2 mt-md-3 opacity-50  custom-line project-desc">
                       {project.description}
                     </p>

@@ -9,4 +9,7 @@ import restaurantAppMockup from "./pachoo/restaurantAppMockup.png";
 import deliveryAppMockup from "./pachoo/deliveryAppMockup.png";
 import admin from "./pachoo/admin.png";
 import designSystem from "./pachoo/designSystem.png";
-export { brevio, grociahub, delivery, music, pachooLogo, pachooSplash, customerAppMockup, restaurantAppMockup, deliveryAppMockup, admin, designSystem };
+import pachooMockup from "./pachooMockup.png";
+import linxed from "./linxed.png";
+import fullteam from "./fullteam.png";      
+export { brevio, grociahub, delivery, music, pachooLogo, pachooSplash, customerAppMockup, restaurantAppMockup, deliveryAppMockup, admin, designSystem, pachooMockup, linxed, fullteam };

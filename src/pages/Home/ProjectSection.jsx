@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { BtnV2 } from "../../components/common";
 import "./style.css";
-import { brevio, grociahub, delivery, music } from "../../assets/projects";
+import { brevio, pachooMockup, linxed, fullteam } from "../../assets/projects";
 import { useNavigate } from "react-router-dom";
 
 const ProjectSection = () => {
@@ -34,7 +34,7 @@ const ProjectSection = () => {
                 and evolve.
               </h1>
 
-              <div className="mt-3">
+              <div className="mt-3 d-md-none">
                 <BtnV2
                   label="View All Projects"
                   onClick={() => navigate("/my-work")}
@@ -49,6 +49,32 @@ const ProjectSection = () => {
       <div className="bg-custom-dark">
         <Container fluid>
           <Row className="border-custom-top">
+            <Col
+              xs={12}
+              md={6}
+              className="border-custom-bottom border-custom-start pt-5 project-card"
+              onClick={() => handleOpenProject("https://play.google.com/store/apps/details?id=com.pachoo&hl=en_IN")}
+            >
+              <div className="px-md-5">
+                <p className="custom-primary ms-md-4 mb-2">
+                  {"{"} <span className="text-light">Mobile & Web Design</span> {"}"}
+                </p>
+
+                <h2 className="fs-3 fw-semibold text-light ms-md-4">
+                  Pachoo Ecosystem (Food Delivery App)
+                </h2>
+
+                <p className="text-light opacity-50 ms-md-4 mt-2">
+                  UI/UX Design 
+                </p>
+              </div>
+
+              <img
+                src={pachooMockup}
+                alt="Pachoo Customer App Project"
+                className="w-100 mt-4 px-md-4 pb-4 project-image"
+              />
+            </Col>
             <Col
               xs={12}
               md={6}
@@ -79,32 +105,7 @@ const ProjectSection = () => {
               />
             </Col>
 
-          <Col
-  xs={12}
-  md={6}
-  className="border-custom-bottom border-custom-start pt-5 project-card"
- onClick={()=>handleOpenProject("https://play.google.com/store/apps/details?id=com.pachoo&hl=en_IN")}
->
-  <div className="px-md-5">
-    <p className="custom-primary ms-md-4 mb-2">
-      {"{"} <span className="text-light">Mobile App</span> {"}"}
-    </p>
-
-    <h2 className="fs-3 fw-semibold text-light ms-md-4">
-      Pachoo Customer App
-    </h2>
-
-    <p className="text-light opacity-50 ms-md-4 mt-2">
-      UI/UX Design & Development
-    </p>
-  </div>
-
-  <img
-    src={grociahub}
-    alt="Pachoo Customer App Project"
-    className="w-100 mt-4 px-md-4 pb-4 project-image"
-  />
-</Col>
+            
           </Row>
 
           <Row>
@@ -116,19 +117,19 @@ const ProjectSection = () => {
             >
               <div className="px-md-5">
                 <p className="custom-primary ms-md-2 mb-2">
-                  {"{"} <span className="text-light">App Design</span> {"}"}
+                  {"{"} <span className="text-light">App & Web Design</span> {"}"}
                 </p>
 
                 <h2 className="fs-3 fw-semibold text-light ms-md-2">
-                  Delivery Partner App
+                  Family Engagement Platform
                 </h2>
                 <p className="text-light opacity-50 ms-md-2 mt-2 ">
                   UI/UX Design
                 </p>
               </div>
               <img
-                src={delivery}
-                alt="Food Delivery App Project"
+                src={linxed}
+                alt="Family Engagement Platform Project"
                 className="w-100 mt-4 px-md-4 pb-4 project-image"
               />
             </Col>
@@ -141,19 +142,18 @@ const ProjectSection = () => {
             >
               <div className="px-md-5">
                 <p className="custom-primary ms-md-2 mb-2">
-                  {"{"} <span className="text-light">Web Design</span> {"}"}
+                  {"{"} <span className="text-light">App Design</span> {"}"}
                 </p>
 
                 <h2 className="fs-3 fw-semibold text-light ms-md-2">
-                  Groova Music Web Page
-                </h2>
+Football Strategy & Analytics            </h2>
                 <p className="text-light opacity-50 ms-md-2 mt-2 ">
                   UI/UX Design
                 </p>
               </div>
               <img
-                src={music}
-                alt="Music Streaming Website Project"
+                src={fullteam}
+                alt="FullTeam Project"
                 className="w-100 mt-4 px-md-4 pb-0 pb-md-4 project-image"
               />
             </Col>

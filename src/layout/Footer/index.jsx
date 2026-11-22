@@ -91,8 +91,8 @@ const Footer = () => {
       </Container>
       <Container className="py-4">
         <Row>
-          <Col className="text-center text-md-start mb-3 mb-md-0">
-            <img src={logoLight} alt="logo" />
+          <Col className="text-center text-md-start mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start align-items-center gap-2">
+            <img src={logoLight} alt="logo" className="logo-footer"/>
           </Col>
           <Col md={6} className="text-center">
             <p className="text-light opacity-50 fw-light pt-2">

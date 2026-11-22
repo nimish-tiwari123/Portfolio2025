@@ -33,7 +33,10 @@
   transform: rotate(180deg);
   z-index: -1; /* send it behind the content */
 }
-
+.logo-footer {
+  width: 100px;
+  height: auto;
+}
 @media screen and (max-width: 768px) {
   .footer-heading {
      font-size: 28px;
