@@ -9,7 +9,7 @@ import {
   zioun,
   marbleGalaxy
 } from "../../assets/projectPage";
-import {pachoo, brevio, linxed, fullteam, ludo} from "../../assets/projects/projectPage";
+import {pachoo, brevio, linxed, fullteam, ludo ,slate} from "../../assets/projects/projectPage";
 
 import { point } from "../../assets";
 import { BtnV1 } from "../../components/common";
@@ -50,6 +50,15 @@ const Projects = () => {
   description:
     "A smart football management platform that helps coaches and teams plan match strategies, assign player roles, track live matches, and analyze team performance through real-time insights.",
   image: fullteam,
+  link: "YOUR_FIGMA_LINK",
+  type: "url",
+},
+{
+  category: "App & Web Design",
+  title: "Sports Facility Booking App",
+  description:
+    "A seamless sports facility booking platform that helps users discover nearby venues, explore available sports facilities, check time slots, and book courts with an easy and convenient experience.",
+  image: slate,
   link: "YOUR_FIGMA_LINK",
   type: "url",
 },
@@ -162,8 +171,8 @@ const Projects = () => {
                       <span className="text-dark ">{project.category}</span>{" "}
                       {"}"}
                     </p>
-                    <h2 className="fw-normal project-title fw-bold">{project.title}</h2>
-                    <p className="mt-2 mt-md-3 opacity-50  custom-line project-desc">
+                    <h2 className="fw-normal project-title fw-medium">{project.title}</h2>
+                    <p className="mt-2 mt-md-3 custom-line project-desc custom-grey">
                       {project.description}
                     </p>
                   </Col>
